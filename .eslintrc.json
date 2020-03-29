@@ -38,17 +38,14 @@
             2,
             "never"
         ],
-        "no-cond-assign": [
-            2,
-            "always"
-        ],
+        "no-cond-assign": 0,
         "no-constant-condition": 2,
         "no-control-regex": 2,
         "no-dupe-args": 2,
         "no-dupe-keys": 2,
         "no-duplicate-case": 2,
         "no-empty-character-class": 2,
-        "no-empty": 2,
+        "no-empty": 0,
         "no-extra-boolean-cast": 0,
         "no-extra-parens": [
             2,
@@ -165,7 +162,7 @@
         "no-shadow": 2,
         "no-undef-init": 2,
         "no-undef": 2,
-        "no-unused-vars": 2,
+        "no-unused-vars": 0,
         // Node.js
         "callback-return": 2,
         "no-mixed-requires": 2,
@@ -173,6 +170,7 @@
         "no-sync": 2,
         "handle-callback-err": 1,
         "no-new-require": 2,
+        "no-process-exit": 0,
         // Stylistic
         "array-bracket-spacing": [
             2,

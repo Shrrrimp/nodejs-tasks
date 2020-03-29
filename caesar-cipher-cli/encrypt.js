@@ -1,8 +1,8 @@
 const encryptFn = (shift, str) => {
-  if (!str) return;
+  if (!str) return '';
 
   let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  const otherCharacters = '-=~"\'#$%&*^:<>?/!{(|)}.1234567890, ';
+  const otherCharacters = '-=~"\'#$%&*^:<>?/!{(|)}.1234567890, \n';
   let res = '';
 
   let shiftedAlpabet = alphabet.slice(shift);
@@ -12,6 +12,9 @@ const encryptFn = (shift, str) => {
 
   for (let i = 0; i < str.length; ++i) {
     const index = alphabet.indexOf(str[i]);
+    if (index === -1) {
+      continue;
+    }
     res += shiftedAlpabet[index];
   }
 
