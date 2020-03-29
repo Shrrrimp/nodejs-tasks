@@ -1,4 +1,4 @@
-##Caesar cipher CLI tool
+## Caesar cipher CLI tool
 This CLI tool accept 4 options (short alias and full name):
 
 1. -s, --shift: a shift
